@@ -2,7 +2,7 @@
 
 ##Introduction 
 
-This is a website is build for practise purposes.
+This website is build for practise purposes.
 
 ##Technology Stack
 
