@@ -20,7 +20,21 @@
         <img src="images/logo.png" alt="sc logo" id="sc-logo">
     </div>
     <div class="Header-4"></div>
-    <img id="banner" src="images/banner.png" alt="Banner">
+    <div id="carousel">
+        <button id="Previous-img" onclick="goPrev()">⟨⟨</button>
+
+        <main>
+            <img src="https://picsum.photos/200/300/?blur=2" alt="" class="slide">
+            <img src="https://picsum.photos/200/300?grayscale
+        " alt="" class="slide">
+            <img src="https://picsum.photos/id/237/200/300" alt="" class="slide">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="" class="slide">
+
+        </main>
+
+        <button id="Next-img" onclick="goNext()">⟩⟩</button>
+
+    </div>
     <h1>About SusCloth</h1>
 
     <div id="About-text">
@@ -68,6 +82,7 @@
         </ul>
         <span>© Copyrights @ SusClothing 2024</span>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
