@@ -252,3 +252,62 @@ main {
     padding: 0.5rem;
     font-size: 2rem;
 }
+
+/* Properties for each webpage */
+#page-content{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+}
+/* Properties for heading of each webpage */
+#page-heading{
+    padding: 0.8rem;
+    font-size:2.5rem;
+    text-align: center;
+    margin: 2px;
+}
+
+/* For screens larger than 600px: 2 columns */
+@media (min-width: 600px) {
+    #page-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For screens larger than 900px: 3 columns */
+@media (min-width: 900px) {
+    #page-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* Properties for product on each page */
+.page-items{
+    padding: 1.2rem;
+    text-align: center;
+}
+.page-items:hover{
+
+    padding: 1.2rem;
+    text-align: center;
+    border: 3px solid black;
+}
+.page-items img{
+   max-width: 200px;
+   height: 300px;
+
+}
+
+.page-items a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.page-items a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color:#73393E;}
+    
+#cart-logo{
+    max-height: 50px;
+}
