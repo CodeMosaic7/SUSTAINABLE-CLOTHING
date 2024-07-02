@@ -258,6 +258,10 @@ main {
     width: 100%;
     margin: 0 auto;
     display: grid;
+    gap: 4px;
+}
+#page-content:nth-child(odd){
+    background-color: aliceblue;
 }
 /* Properties for heading of each webpage */
 #page-heading{
@@ -282,20 +286,26 @@ main {
 }
 /* Properties for product on each page */
 .page-items{
-    padding: 1.2rem;
+    width:60%;
+    padding-bottom: 1.2rem;
     text-align: center;
+    margin: 1rem auto;
 }
 .page-items:hover{
 
-    padding: 1.2rem;
     text-align: center;
-    border: 3px solid black;
+    border: 4px solid black;
+    border-radius: 1.2rem;
 }
 .page-items img{
-   max-width: 200px;
+   width: 100%;
    height: 300px;
+   border-radius: 1rem;
+   object-fit:fill;
+   
 
 }
+
 
 .page-items a{
     text-decoration: none;
@@ -309,5 +319,11 @@ main {
     color:#73393E;}
     
 #cart-logo{
-    max-height: 50px;
+    height: 25%;
+}
+#cart-logo {
+    fill: #333; /* Default fill color for the cart */
+    width: 100%; /* Make the SVG responsive */
+    height: auto;
+    transition: fill 0.3s ease; /* Smooth transition for color change */
 }
