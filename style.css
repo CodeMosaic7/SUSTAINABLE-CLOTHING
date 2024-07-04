@@ -15,9 +15,7 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+   
     
     font-family: "Mulish";
     background-color: var(--light-color);
@@ -163,8 +161,6 @@ body {
     flex-wrap: wrap;
     gap: 0.2rem;
     justify-content: space-evenly;
-
-
 }
 
 #Summer {
@@ -180,7 +176,6 @@ body {
 .img_season {
     width: 60%;
     height: 60%;
-
     border: 5px solid var(--border-color2);
     border-radius: 10px;
 
@@ -201,7 +196,6 @@ body {
     text-align: center;
     background-color: var(--dark-color);
     color: var(--lightest-color);
-
 }
 
 #footer-links {
@@ -222,7 +216,6 @@ body {
     text-decoration: none;
     color: var(--border-color2);
     font-weight: bolder;
-
 }
 /* For the carousel */
 main {
@@ -302,7 +295,6 @@ main {
     border-radius: 1.2rem;
 }
 .page-items:hover{
-
     text-align: center;
     border: 4px solid black;
     border-radius: 1.2rem;
@@ -322,24 +314,15 @@ main {
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.2rem;
-    color:#73393E;}
+    color:#73393E;
+}
     
-#cart-logo{
-    height: 25%;
-}
-#cart-logo {
-    fill: #333; /* Default fill color for the cart */
-    width: 100%; /* Make the SVG responsive */
-    height: auto;
-    transition: fill 0.3s ease; /* Smooth transition for color change */
-}
-
 /* Properties of show all products button */
 #all-products{
     margin-top: .6rem;
     margin-bottom: .6rem;
 }
-#all-products button{
+#all-product button{
     width: 100%;
     height: 5rem;
     font-size: 1.6rem;
@@ -347,7 +330,7 @@ main {
     background-color: var(--dark-color);
     padding: 1rem;
 }
-#all-products button:hover{
+#all-product button:hover{
     width: 100%;
     height: 5rem;
     font-size: 1.6rem;
@@ -358,24 +341,55 @@ main {
 }
 
 /* Properties of the allproducts content */
-#all-product{
+#all-product-page{
     width: 100%;
     margin: 0 auto;
     display: grid;
     gap: 4px;
+    background-color:var(--light-color);
 }
-#all-product:nth-child(odd){
+#all-product:nth-child(2n){
     background-color: aliceblue;
-}
+} 
 @media (min-width: 600px) {
-    #all-product {
+    #all-product-page {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* For screens larger than 900px: 3 columns */
 @media (min-width: 900px) {
-    #all-product {
+    #all-product-page {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.all-product{
+    width:60%;
+    text-align: center;
+    margin: 1rem auto;
+    background-color: var(--lightest-color);
+    border-radius: 1.2rem;
+}
+.all-product:hover{
+    text-align: center;
+    border: 4px solid black;
+    border-radius: 1.2rem;
+}
+.all-product img{
+   width: 100%;
+   height: 300px;
+   border-radius: 1rem;
+   object-fit:fill;
+}
+.all-product a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.all-product a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color:#73393E;
 }

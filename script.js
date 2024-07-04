@@ -135,12 +135,12 @@ const data = {
       ]
     }
   }
-  const allproduct=document.getElementById('all-product');
+  const allproduct=document.getElementById('all-product-page');
   for (const category in data.categories) {
     console.log(`Category: ${category}`);
     data.categories[category].forEach(product => {
       allproduct.innerHTML+=`<a href="https://www.google.co.in/">
-<div class='page-items'>
+<div class='all-product'>
       <img src='${product.img}'>
         <h4 id="item-name">${product.name}</h4> 
        <p id="item-descryption">${product.price}</p>
