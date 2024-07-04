@@ -15,6 +15,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
     font-family: "Mulish";
     background-color: var(--light-color);
 }
@@ -351,4 +355,27 @@ main {
     background-color: var(--dark-color);
     padding: 1rem;
     font-weight: bolder;
+}
+
+/* Properties of the allproducts content */
+#all-product{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 4px;
+}
+#all-product:nth-child(odd){
+    background-color: aliceblue;
+}
+@media (min-width: 600px) {
+    #all-product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For screens larger than 900px: 3 columns */
+@media (min-width: 900px) {
+    #all-product {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
