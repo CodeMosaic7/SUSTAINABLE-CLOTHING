@@ -139,8 +139,8 @@ const data = {
   for (const category in data.categories) {
     console.log(`Category: ${category}`);
     data.categories[category].forEach(product => {
-      allproduct.innerHTML+=`<a href="https://www.google.co.in/">
-<div class='all-product'>
+      allproduct.innerHTML+=`<div class='all-product'><a href="https://www.google.co.in/">
+
       <img src='${product.img}'>
         <h4 id="item-name">${product.name}</h4> 
        <p id="item-descryption">${product.price}</p>
@@ -153,3 +153,25 @@ const data = {
       // console.log('--------------------------');
     });
   }
+
+// script for spring page
+const springproducts=document.getElementById("spring-page-content");
+const winterproducts=document.getElementById("winter-page-content");
+const summerproducts=document.getElementById("summer-page-content");
+const monsoonproducts=document.getElementById("monsoon-page-content");
+
+for (const category in data.categories) {
+  if (category==="Spring"){
+    data.categories[category].forEach(product => {
+      springproducts.innerHTML+=`<div class='all-product'><a href="https://www.google.co.in/">
+
+      <img src='${product.img}'>
+        <h4 id="item-name">${product.name}</h4> 
+       <p id="item-descryption">${product.price}</p>
+       ${product.description}</a></div>`;
+    });
+    
+
+  }
+  
+}

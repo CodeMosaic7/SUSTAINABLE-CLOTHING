@@ -318,11 +318,11 @@ main {
 }
     
 /* Properties of show all products button */
-#all-products{
+#all-products-button{
     margin-top: .6rem;
     margin-bottom: .6rem;
 }
-#all-product button{
+#all-products-button button{
     width: 100%;
     height: 5rem;
     font-size: 1.6rem;
@@ -330,7 +330,7 @@ main {
     background-color: var(--dark-color);
     padding: 1rem;
 }
-#all-product button:hover{
+#all-products-button button:hover{
     width: 100%;
     height: 5rem;
     font-size: 1.6rem;
@@ -348,7 +348,7 @@ main {
     gap: 4px;
     background-color:var(--light-color);
 }
-#all-product:nth-child(2n){
+#all-product-page:nth-child(2n){
     background-color: aliceblue;
 } 
 @media (min-width: 600px) {
