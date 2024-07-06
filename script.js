@@ -47,42 +47,49 @@ const data = {
           "name": "Slaying Lavender",
           "price": 49.99,
           "description": "A light and breezy floral dress perfect for spring outings.",
-          "img": "images/images-products/spring1.jpg"
+          "img": "images/images-products/spring1.jpg",
+          "destination":"product-page.html"
+
         },
         {
           "id": 2,
           "name": "Green day",
           "price": 69.99,
           "description": "A stylish jacket to keep you warm on cool spring evenings.",
-          "img": "images/images-products/spring2.jpg"
+          "img": "images/images-products/spring2.jpg",
+          "destination":"product-page.html"
         },
         {
           "id": 3,
           "name": "Own it!",
           "price": 69.99,
           "description": "A stylish jacket to keep you warm on cool spring evenings.",
-          "img": "images/images-products/spring3.jpg"
+          "img": "images/images-products/spring3.jpg",
+          "destination":"product-page.html"
         },
         {
           "id": 4,
           "name": "Own it!2",
           "price": 69.99,
           "description": "A stylish jacket to keep you warm on cool spring evenings.",
-          "img": "images/images-products/spring4.jpg"
+          "img": "images/images-products/spring4.jpg",
+          "destination":"product-page.html"
         },
         {
           "id": 5,
           "name": "Beach Day",
           "price": 69.99,
           "description": "A stylish jacket to keep you warm on cool spring evenings.",
-          "img": "images/images-products/spring5.jpg"
+          "img": "images/images-products/spring5.jpg",
+          "destination":"product-page.html"
         },
         {
           "id": 6,
           "name": "Pinkish",
           "price": 69.99,
           "description": "A stylish jacket to keep you warm on cool spring evenings.",
-          "img": "images/images-products/spring6.jpg"
+          "img": "images/images-products/spring6.jpg",
+          "destination":"product-page.html"
         }
       ],
       "Summer": [
@@ -91,14 +98,16 @@ const data = {
           "name": "Beach Shorts",
           "price": 29.99,
           "description": "Comfortable and lightweight shorts ideal for the summer beach.",
-          "img": "images/images-products/spring1.jpg"
+          "img": "images/images-products/spring1.jpg",
+          "destination":"product-page.html"
         },
         {
           "id": 8,
           "name": "Summer T-shirt",
           "price": 19.99,
           "description": "A breathable cotton T-shirt for hot summer days.",
-          "img": "images/images-products/spring1.jpg"
+          "img": "images/images-products/spring1.jpg",
+          "destination":"product-page.html"
         }
       ],
       "Winter": [
@@ -107,14 +116,16 @@ const data = {
           "name": "Winter Coat",
           "price": 129.99,
           "description": "A thick, insulated coat to keep you warm during the winter months.",
-          "img": "images/images-products/spring1.jpg"
+          "img": "images/images-products/spring1.jpg",
+          "destination":"product-page.html"
         },
         {
           "id": 10,
           "name": "Woolen Sweater",
           "price": 89.99,
           "description": "A cozy woolen sweater for those chilly winter days.",
-          "img": "images/images-products/spring1.jpg"
+          "img": "images/images-products/spring1.jpg",
+          "destination":"product-page.html"
         }
       ],
       "Monsoon": [
@@ -123,14 +134,16 @@ const data = {
           "name": "Raincoat",
           "price": 59.99,
           "description": "A waterproof raincoat to stay dry during the rainy season.",
-          "img": "images/images-products/spring1.jpg"
+          "img": "images/images-products/spring1.jpg",
+          "destination":"product-page.html"
         },
         {
           "id": 12,
           "name": "Waterproof Boots",
           "price": 79.99,
           "description": "Durable waterproof boots for walking through wet conditions.",
-          "img": "images/images-products/spring1.jpg"
+          "img": "images/images-products/spring1.jpg",
+          "destination":"product-page.html"
         }
       ]
     }
@@ -154,7 +167,7 @@ const data = {
     });
   }
 
-// script for spring page
+// script for each page.
 const springproducts=document.getElementById("spring-page-content");
 const winterproducts=document.getElementById("winter-page-content");
 const summerproducts=document.getElementById("summer-page-content");
@@ -175,3 +188,5 @@ for (const category in data.categories) {
   }
   
 }
+
+
