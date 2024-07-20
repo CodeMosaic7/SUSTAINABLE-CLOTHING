@@ -1,4 +1,4 @@
-###SusClothing
+##SusClothing
 
 ##Introduction 
 
@@ -6,4 +6,6 @@ This website is build for practise purposes.
 
 ##Technology Stack
 
-HTML CSS JS
+Frontend: HTML CSS JS
+Backend: Django
+Database: MySQL
