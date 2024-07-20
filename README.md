@@ -8,4 +8,4 @@ This website is build for practise purposes.
 
 Frontend: HTML CSS JS
 Backend: Django
-Database: MySQL
+Database: MySQL				
